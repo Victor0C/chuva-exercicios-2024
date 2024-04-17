@@ -1,0 +1,121 @@
+header{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+   margin-top: 2px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 25.78px;
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #FDF1EB;
+    padding: 5px 36px;
+}
+
+.containerHeader2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.containerTitles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #725C5C;
+}
+
+.subTitles{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 34px;
+    border: 1px solid #CCCCCC ;
+    border-radius: 3px;
+    padding: 1px;
+    margin-right: 22px;
+}
+
+#globeIcon{
+    width: 22px;
+    height: 21px;
+}
+
+#dropdownIcon{
+    width: 6px;
+    height: 4px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.userText{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #333333;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+}
+
+.imgUser{
+    display: flex;
+    justify-content: right;
+}
+
+#imgOfUser{
+    width: 30.3px;
+    height: 30.63px;
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    background-image: url('../../../assets/img-user.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #F85959;
+}
+
+#notification p{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 11,72px;
+}
