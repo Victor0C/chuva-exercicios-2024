@@ -12,4 +12,13 @@ export class SectionStartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  playVideo(){
+    const video = document.getElementById('video') as HTMLVideoElement;
+    const overlay = document.getElementById('overlay-video') as HTMLElement;
+
+    overlay.style.display='none'
+    video.play()
+
+  }
+
 }

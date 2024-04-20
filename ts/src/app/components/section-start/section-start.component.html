@@ -17,10 +17,23 @@
             <p id="howCite">COMO CITAR ESSE TRABALHO?</p>
         </div>
     </div>
-    <div class="part2">
-        <video class="videoPlayer" loop controls>
-            <source src="../../../assets/ohchuva.mp4" type="video/mp4">
-        </video>
+    <div class="part2" >
+        <div class="video">
+            <video id="video" class="videoPlayer" loop controls>
+                <source src="../../../assets/ohchuva.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-video" id="overlay-video">
+                <p id="title-video">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</p>
+                <img id="play" src="../../../assets/play-icon.png" (click)="playVideo()">
+                <div class="photo-video">
+                    <img src="../../../assets/photo-video.png">
+                    <div>
+                        <p id="beatriz">Beatriz Christiane Melo</p>
+                        <p id="fca">FCA / Universidade Estadual de Campinas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <aside class="details">
             <div class="section-title">
                 <h3>Detalhes</h3>
