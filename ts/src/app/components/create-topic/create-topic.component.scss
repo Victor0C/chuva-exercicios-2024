@@ -20,19 +20,20 @@
     gap:51px;
 }
 
-.end-create-topic{
+.end-create-topic {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
+  }
 
 .btn-create-topic{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    width: 30%;
+    min-width: 200px;
+    width: 300px;
     height: 32px;
     background: linear-gradient(to top, #EE7A3A, #FFB354);
     border: none;

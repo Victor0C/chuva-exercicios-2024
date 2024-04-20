@@ -55,3 +55,14 @@ footer{
 #bold{
     font-weight: 500;
 }
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      
+    }
+}

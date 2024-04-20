@@ -15,6 +15,7 @@ import { FillTopicComponent } from './components/fill-topic/fill-topic.component
 import { TopicCreatedComponent } from './components/topic-created/topic-created.component';
 import { TopicCommentComponent } from './components/topic-comment/topic-comment.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MenuToggleComponent } from './components/menu-toggle/menu-toggle.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FooterComponent } from './components/footer/footer.component';
     TopicCreatedComponent,
     TopicCommentComponent,
     FooterComponent,
+    MenuToggleComponent,
   ],
   imports: [
     BrowserModule

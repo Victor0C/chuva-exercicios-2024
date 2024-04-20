@@ -3,3 +3,9 @@
     width: 100%;
     padding: 20px 43px;
 }
+
+@media screen and (max-width: 768px) {
+    .containerMain {
+        padding: 20px 10px;
+    }
+  }

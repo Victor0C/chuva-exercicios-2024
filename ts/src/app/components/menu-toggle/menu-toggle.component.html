@@ -1,0 +1,29 @@
+<div class="menu-icon" (click)="toggleMenu()">
+    <img src="../../../assets/menu.png" id="toggle">
+</div>
+<aside [class.closed]="!isOpen" class="aside">
+    <div class="slaca" [class.closed]="!isOpen">
+        <p>SLACA 2019</p>
+    </div>
+    <ul class="options" [class.closed]="!isOpen">
+        <div>
+            <li>Apresentação</li>
+        </div>
+        <div>
+            <li>Comitês</li>
+        </div>
+        <div>
+            <li>Autores</li>
+        </div>
+        <div>
+            <li>Eixos temáticos</li>
+        </div>
+        <div id="trabalhos">
+            <div></div>
+            <li>Trabalhos</li>
+        </div>
+        <div>
+            <li>Contato</li>
+        </div>
+    </ul>
+</aside>

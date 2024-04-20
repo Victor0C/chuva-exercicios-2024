@@ -180,8 +180,53 @@
 #universities{
     color: #a9a8a8 ;
 }
+.authors h4{
+    color: #595959;
+}
 
 .titleDetails h3{
     color: #4E4E4E;
     margin: 11px 0px 11px 15px ;
 }
+
+
+@media screen and (max-width: 768px) {
+    .part1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .part2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        width: 100%;
+    }
+
+    #title-video{
+        font-size: 18px;
+    }
+
+    #play{
+        width:30px;
+        height:30px;       
+    }
+
+    #beatriz{
+        font-size: 17px;
+    }
+    
+    #fca{
+        font-size: 14px;
+    }
+    
+    .photo-video img{
+        width: 80px;
+        height: 80px;
+    }
+    
+  }
