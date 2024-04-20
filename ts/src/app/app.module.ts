@@ -14,6 +14,7 @@ import { CreateTopicComponent } from './components/create-topic/create-topic.com
 import { FillTopicComponent } from './components/fill-topic/fill-topic.component';
 import { TopicCreatedComponent } from './components/topic-created/topic-created.component';
 import { TopicCommentComponent } from './components/topic-comment/topic-comment.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TopicCommentComponent } from './components/topic-comment/topic-comment.
     FillTopicComponent,
     TopicCreatedComponent,
     TopicCommentComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule

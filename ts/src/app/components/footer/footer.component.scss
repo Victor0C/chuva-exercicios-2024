@@ -1,0 +1,57 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 43px;
+    gap: 13px;
+}
+
+.footer{
+    display: flex;
+    gap: 50px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.know-morer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   padding: 10px;
+   background-color: #71478e;
+   border-radius: 5px;
+   font-family: "Quicksand", sans-serif;
+   font-size: 14px;
+   color: #fff;
+}
+
+.know-morer a[href]{
+    text-decoration: none;
+    color: inherit;
+}
+
+.know-morer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+}
+
+#bold{
+    font-weight: 500;
+}
