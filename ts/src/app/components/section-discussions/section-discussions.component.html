@@ -1,0 +1,16 @@
+<section class="discussions">
+    <div class="section-title">
+       <h3>Discussões</h3> 
+    </div>
+    <div class="discussions-content">
+        <app-create-topic class="app-create-topic"></app-create-topic>
+        <app-fill-topic (topic)="onRenderNewTopic($event)" class="app-fill-topic"></app-fill-topic>
+        <app-topic-created class="app-topic-created"></app-topic-created>
+        <div class="app-card-topic" id="app-card-topic">
+            <ng-container *ngFor="let card of topicCards">
+                <app-card-topic-overlay [id]="card.id" [subject]="card.subject" [content]="card.content"></app-card-topic-overlay>
+            </ng-container>
+            <app-card-topic [id]="'9999'" [subject]="'Assunto da pergunta aparece aqui'" [content]="'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?'"></app-card-topic>
+        </div>
+    </div>
+</section>
