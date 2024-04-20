@@ -1,0 +1,26 @@
+<aside class="answered-topic" id="{{id}}">
+    <div class="topic">
+        <div class="top-topic">
+            <h4 class="ops-topic-subject">{{subject}}</h4>
+            <h5>{{author}}</h5>
+        </div>
+        <div class="content-topic">
+            <p>{{content}}</p>
+        </div>
+        <div class="topic-actions"> 
+            <button id="more-information">
+                <img  src="../../../assets/mais-informacoes.png">
+            </button>
+            <button class="heart" (click)="like()">
+                <img src="../../../assets/heart.png">
+            </button>
+            <p>{{likes}} likes</p>
+            <p>{{comments.length}} respostas</p>
+        </div>
+    </div>
+    <div class="comments-container">
+        <ng-container *ngFor="let comment of comments">
+            <app-topic-comment [user]="comment.user" [typeUser]="comment.typeUser" [content]="comment.content"></app-topic-comment>
+        </ng-container>
+    </div>
+</aside>
