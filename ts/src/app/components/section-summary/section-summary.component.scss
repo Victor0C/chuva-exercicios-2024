@@ -1,0 +1,35 @@
+.summary{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+.summary-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 15px ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #595959;
+}
+#see-more{
+    display: none;
+    flex-direction: column;
+    gap: 15px ;
+}
+
+#btn-show-less{
+    display: none;
+}
+
+.btn-show-more{
+    font-size: 16px;
+    color:#ED7839;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
