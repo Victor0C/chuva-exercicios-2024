@@ -1,0 +1,119 @@
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 12px
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 120px;;
+    height: 31px;
+    background-color:#ED7839;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #0000003D;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.fav-doi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 31px;
+    background-color:#ED7839;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #0000003D;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.download:active,
+.fav-doi:active{
+    box-shadow: 0 1px 1px #0000003D;
+    transform: translateY(1px);
+}
+
+#howCite{
+    color: #ED7839;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 7px;
+}
+
+.part2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.videoPlayer{
+    width: 80%;
+    height: 439px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+    height: 439px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+.limitDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 15px;
+    gap: 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    overflow: auto;
+}
+
+.informations, .authors{
+    color: #595959;
+}
+
+#universities{
+    color: #a9a8a8 ;
+}
+
+.titleDetails h3{
+    color: #4E4E4E;
+    margin: 11px 0px 11px 15px ;
+}
