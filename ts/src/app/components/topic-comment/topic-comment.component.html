@@ -1,0 +1,10 @@
+<div class="comment" id="{{id}}" [ngStyle]="{'background-color': typeUser != '' ? '#F8F8F8' : '#FFFFFF'}">
+    <div class="top-comment">
+        <h3>{{user}}</h3>
+        <div *ngIf="typeUser !== ''" class="type-user">
+            <h4>{{typeUser}}</h4>
+            <img src="../../../assets/confirm-orange.png">
+        </div>
+    </div>
+    <p>{{content}}</p>
+</div>
