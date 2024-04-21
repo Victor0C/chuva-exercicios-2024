@@ -10,13 +10,12 @@ export class FillTopicComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  public ngOnInit(): void { }
 
-  createdTopic(event: Event): void {
+  public createdTopic(event: Event): void {
     const divCreatedTopic = document.getElementById('topic-created') as HTMLElement;
     const divFillTopic = document.getElementById('fill-topic') as HTMLElement;
-    const form = new FormData(event.target as HTMLFormElement)
+    const form = new FormData(event.target as HTMLFormElement);
     
     event.preventDefault();
     (event.target as HTMLFormElement).reset();
@@ -29,18 +28,4 @@ export class FillTopicComponent implements OnInit {
       content: form.get('textarea') as string
     });
   }
-  
-  cancellCreateTopic(): void {
-    const divCreateTopic = document.getElementById('create-topic') as HTMLElement;
-    const divFillTopic = document.getElementById('fill-topic') as HTMLElement;
-    const divCreatedTopic = document.getElementById('topic-created') as HTMLElement;
-
-    divCreateTopic.style.display = 'flex';
-    divFillTopic.style.display = 'none';
-
-    if (divCreatedTopic.style.display === 'flex') {
-      divCreatedTopic.style.display = 'none';
-    }
-  }
-
 }

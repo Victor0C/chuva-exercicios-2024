@@ -9,10 +9,9 @@ export class SectionSummaryComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  public ngOnInit(): void { }
 
-  viewMore(): void {
+  public viewMore(): void {
     const ellipsis = document.getElementById('ellipsis') as HTMLElement;
     const viewmore = document.getElementById('see-more') as HTMLElement;
     const btnShowMore = document.getElementById('btn-show-more') as HTMLElement;
@@ -24,7 +23,7 @@ export class SectionSummaryComponent implements OnInit {
     btnShowLess.style.display = 'inline';
   }
 
-  viewLess(): void {
+  public viewLess(): void {
     const ellipsis = document.getElementById('ellipsis') as HTMLElement;
     const viewmore = document.getElementById('see-more') as HTMLElement;
     const btnShowMore = document.getElementById('btn-show-more') as HTMLElement;
@@ -35,5 +34,4 @@ export class SectionSummaryComponent implements OnInit {
     btnShowMore.style.display = 'inline';
     btnShowLess.style.display = 'none';
   }
-
 }

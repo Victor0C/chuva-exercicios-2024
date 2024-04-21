@@ -13,7 +13,5 @@ export class TopicCommentComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  public ngOnInit(): void { }
 }

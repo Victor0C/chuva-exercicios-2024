@@ -6,15 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card-topic-overlay.component.scss']
 })
 export class CardTopicOverlayComponent implements OnInit {
-  @Input() public id: string = ''
-  @Input() public subject: string = ''
-  @Input() public author: string = 'Carlos Henrique Santos'
-  @Input() public content: string = ''
+  @Input() public id: string = '';
+  @Input() public subject: string = '';
+  @Input() public author: string = 'Carlos Henrique Santos';
+  @Input() public content: string = '';
   
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {
-
-  }
-
+  public ngOnInit(): void { }
 }

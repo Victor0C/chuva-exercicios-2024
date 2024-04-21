@@ -8,26 +8,26 @@ import commentsMock from 'src/app/mock/comments.mock';
   styleUrls: ['./card-topic.component.scss']
 })
 export class CardTopicComponent implements OnInit {
-  @Input() public id: string = ''
-  @Input() public subject: string = ''
-  @Input() public author: string = 'Carlos Henrique Santos'
-  @Input() public content: string = ''
-  @Input() public likes: number = 0
-  @Input() public comments: Array<TopicComment> = commentsMock
-  @Input() public viewComments: boolean = false
+  @Input() public id: string = '';
+  @Input() public subject: string = '';
+  @Input() public author: string = 'Carlos Henrique Santos';
+  @Input() public content: string = '';
+  @Input() public likes: number = 0;
+  @Input() public comments: Array<TopicComment> = commentsMock;
+  public viewComments: boolean = false;
   
   constructor() {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
-  like(){
-    this.likes++
-    console.log(this.likes)
+  public like(): void{
+    this.likes++;
+    console.log(this.likes);
   }
 
-  seeComments(){
-    this.viewComments = !this.viewComments
+  public seeComments(): void{
+    this.viewComments = !this.viewComments;
   }
 
 }

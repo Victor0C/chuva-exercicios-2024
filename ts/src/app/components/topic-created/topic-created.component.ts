@@ -9,10 +9,9 @@ export class TopicCreatedComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  public ngOnInit(): void { }
 
-  createTopic(): void {
+  public createTopic(): void {
     const divCreateTopic = document.getElementById('create-topic') as HTMLElement;
     const divFillTopic = document.getElementById('fill-topic') as HTMLElement;
     const divCreatedTopic = document.getElementById('topic-created') as HTMLElement;
@@ -20,8 +19,6 @@ export class TopicCreatedComponent implements OnInit {
     divCreateTopic.style.display = 'none';
     divFillTopic.style.display = 'flex';
 
-    if (divCreatedTopic.style.display === 'flex') {
-      divCreatedTopic.style.display = 'none';
-    }
+    divCreatedTopic.style.display === 'flex' && (divCreatedTopic.style.display = 'none');
   }
 }

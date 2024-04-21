@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import CreateTopic from 'src/app/interfaces/createTopic.interface';
 import { CardTopicOverlayComponent } from '../card-topic-overlay/card-topic-overlay.component';
 
@@ -8,21 +8,19 @@ import { CardTopicOverlayComponent } from '../card-topic-overlay/card-topic-over
   styleUrls: ['./section-discussions.component.scss']
 })
 export class SectionDiscussionsComponent implements OnInit {
-  @ViewChild('appCardTopicOverlay', { read: ViewContainerRef }) appCardTopicOverlay: ViewContainerRef | undefined;
   public topicCards: Array<CardTopicOverlayComponent> = []
-  constructor() {}
 
-  ngOnInit(): void {
-  }
+  constructor() { }
 
+  public ngOnInit(): void { }
 
-  onRenderNewTopic(topic: CreateTopic): void{
-    const newCard:CardTopicOverlayComponent = new CardTopicOverlayComponent()
+  public onRenderNewTopic(topic: CreateTopic): void {
+    const newCard:CardTopicOverlayComponent = new CardTopicOverlayComponent();
 
-    newCard.id = (this.topicCards.length + 1).toString()
-    newCard.subject = topic.subject
-    newCard.content = topic.content
+    newCard.id = (this.topicCards.length + 1).toString();
+    newCard.subject = topic.subject;
+    newCard.content = topic.content;
   
-    this.topicCards.unshift(newCard)
+    this.topicCards.unshift(newCard);
   }
 }
