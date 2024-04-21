@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-topic-created',
@@ -6,19 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topic-created.component.scss']
 })
 export class TopicCreatedComponent implements OnInit {
-
+  @Output() alert: EventEmitter<any> = new EventEmitter()
+  
   constructor() { }
 
   public ngOnInit(): void { }
 
   public createTopic(): void {
-    const divCreateTopic = document.getElementById('create-topic') as HTMLElement;
-    const divFillTopic = document.getElementById('fill-topic') as HTMLElement;
-    const divCreatedTopic = document.getElementById('topic-created') as HTMLElement;
-
-    divCreateTopic.style.display = 'none';
-    divFillTopic.style.display = 'flex';
-
-    divCreatedTopic.style.display === 'flex' && (divCreatedTopic.style.display = 'none');
+    this.alert.emit()
   }
 }

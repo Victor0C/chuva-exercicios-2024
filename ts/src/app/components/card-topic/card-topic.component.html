@@ -8,12 +8,12 @@
             <p>{{content}}</p>
         </div>
         <div class="topic-actions"> 
-            <button id="more-information">
+            <div id="more-information">
                 <img  src="../../../assets/mais-informacoes.png">
-            </button>
-            <button class="heart" (click)="like()">
+            </div>
+            <div class="heart" (click)="like()">
                 <img src="../../../assets/heart.png">
-            </button>
+            </div>
             <p>{{likes}} likes</p>
             <p id="comments" (click)="seeComments()">{{comments.length}} respostas</p>
         </div>

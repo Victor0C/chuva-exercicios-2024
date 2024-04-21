@@ -3,9 +3,9 @@
        <h3>Discussões</h3> 
     </div>
     <div class="discussions-content">
-        <app-create-topic class="app-create-topic"></app-create-topic>
-        <app-fill-topic (topic)="onRenderNewTopic($event)" class="app-fill-topic"></app-fill-topic>
-        <app-topic-created class="app-topic-created"></app-topic-created>
+        <app-create-topic *ngIf="renderCreateTopic" class="app-create-topic" (alert)="onComponentFillTopic()"></app-create-topic>
+        <app-fill-topic *ngIf="renderFillTopic" class="app-fill-topic" (topic)="onRenderNewTopic($event)" ></app-fill-topic>
+        <app-topic-created *ngIf="renderTopicCreated" class="app-topic-created" (alert)="onComponentFillTopic()"></app-topic-created>
         <div class="app-card-topic" id="app-card-topic">
             <ng-container *ngFor="let card of topicCards">
                 <app-card-topic-overlay [id]="card.id" [subject]="card.subject" [content]="card.content"></app-card-topic-overlay>

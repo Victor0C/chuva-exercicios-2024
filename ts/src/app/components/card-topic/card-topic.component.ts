@@ -14,7 +14,7 @@ export class CardTopicComponent implements OnInit {
   @Input() public content: string = '';
   @Input() public likes: number = 0;
   @Input() public comments: Array<TopicComment> = commentsMock;
-  public viewComments: boolean = false;
+  public viewComments: boolean = true;
   
   constructor() {}
 

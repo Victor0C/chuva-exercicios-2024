@@ -3,14 +3,12 @@
    <form id="form" (submit)="createdTopic($event)">
        <div class="subject-container">
            <p>Assunto</p>
-           <!-- <input class="subject" name="subject" type="text" placeholder="Defina um tópico sucinto para notificar os autores..." required='true'> => Comentei esse input com "required" pois no teste do Cypress ele cria um topic sem assunto e conteudo para verificar a mensagem "Aguardando feedback dos autores" -->
            <input class="subject" name="subject" type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
       </div>
       <div class="fill-topic-content">
        <p>Conteúdo</p>
        <div class="container-filling">
-           <!-- <textarea name="textarea" required='true'></textarea> => Comentei esse input com "required" pois no teste do Cypress ele cria um topic sem assunto e conteudo para verificar a mensagem "Aguardando feedback dos autores" -->
-           <textarea name="textarea" ></textarea>
+           <textarea name="textarea"></textarea>
            <div class="div-button">
                <button class="button-send-topic" onsubmit>Enviar</button>
            </div>

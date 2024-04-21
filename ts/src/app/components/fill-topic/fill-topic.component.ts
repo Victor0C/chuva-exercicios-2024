@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-fill-topic',
@@ -19,9 +19,6 @@ export class FillTopicComponent implements OnInit {
     
     event.preventDefault();
     (event.target as HTMLFormElement).reset();
-
-    divCreatedTopic.style.display = 'flex';
-    divFillTopic.style.display = 'none';
    
     this.topic.emit({
       subject: form.get('subject') as string,
