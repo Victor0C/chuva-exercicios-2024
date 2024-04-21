@@ -37,4 +37,16 @@
     color: #ED7839;
     text-decoration: underline;
     cursor: pointer;
+    border: none;
+    background: none;
+}
+
+@media screen and (max-width: 768px) {
+    #feedback{
+        font-size: 16px;   
+    }
+
+    #edit{
+        font-size: 14px;
+    }
 }

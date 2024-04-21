@@ -24,7 +24,7 @@
     line-height: 18.75px;
 }
 
-.subject{
+.subject-container{
     width: 100%;
     color:#ED7839;
     font-family: 'Roboto', sans-serif;
@@ -33,14 +33,14 @@
     line-height: 18.75px;
 }
 
-.subject input{
+.subject-container input{
     width: 100%;
     padding: 10px 0px 10px 10px;
     border: 1px solid #ECECEC;
     border-radius: 3px;
 }
 
-.subject input:focus {
+.subject-container input:focus {
     outline: none;
 }
 
@@ -91,11 +91,6 @@
 
 .button-send-topic{
     background: linear-gradient(to top, #EE7A3A, #FFB354);
-    color: #FFFFFF;
-}
-
-.button-cancell-topic{
-    background: linear-gradient(to top, #616161, #bbbbb9);
     color: #FFFFFF;
 }
 

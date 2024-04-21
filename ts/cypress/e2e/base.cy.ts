@@ -34,7 +34,7 @@ describe('checa elementos básicos', () => {
 
   it('enviar o formulário exibe mensagem de sucesso', () => {
     cy.get('.btn-create-topic').click();
-    cy.get('button').click();
+    cy.get('button').click({multiple: true, force: true}); // coloquei o force: true pois depois da ativação do button btn-create-topic eu coloco o componente que ele pertence como display: none para poder redenziar outro componente no local, como esse teste busca todos os buttons no html para simular o click, ele não encontra mais o button btn-create-topic e falha o teste//
     cy.get('body').contains('Aguardando feedback dos autores');
     cy.compareSnapshot('Trabalho - Topico enviado');
   });
