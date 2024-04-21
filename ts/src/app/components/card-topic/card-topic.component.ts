@@ -14,6 +14,7 @@ export class CardTopicComponent implements OnInit {
   @Input() public content: string = ''
   @Input() public likes: number = 0
   @Input() public comments: Array<TopicComment> = commentsMock
+  @Input() public viewComments: boolean = false
   
   constructor() {}
 
@@ -25,5 +26,8 @@ export class CardTopicComponent implements OnInit {
     console.log(this.likes)
   }
 
+  seeComments(){
+    this.viewComments = !this.viewComments
+  }
 
 }

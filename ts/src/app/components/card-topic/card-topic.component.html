@@ -15,10 +15,10 @@
                 <img src="../../../assets/heart.png">
             </button>
             <p>{{likes}} likes</p>
-            <p>{{comments.length}} respostas</p>
+            <p id="comments" (click)="seeComments()">{{comments.length}} respostas</p>
         </div>
     </div>
-    <div class="comments-container">
+    <div class="comments-container" *ngIf="viewComments">
         <ng-container *ngFor="let comment of comments">
             <app-topic-comment [user]="comment.user" [typeUser]="comment.typeUser" [content]="comment.content"></app-topic-comment>
         </ng-container>
