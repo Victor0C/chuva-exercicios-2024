@@ -14,27 +14,5 @@ export class SectionSummaryComponent implements OnInit {
 
   public viewMore(): void {
     this.renderMore = !this.renderMore
-
-    // const ellipsis = document.getElementById('ellipsis') as HTMLElement;
-    // const viewmore = document.getElementById('see-more') as HTMLElement;
-    // const btnShowMore = document.getElementById('btn-show-more') as HTMLElement;
-    // const btnShowLess = document.getElementById('btn-show-less') as HTMLElement;
-
-    // ellipsis.style.display = 'none';
-    // viewmore.style.display = 'flex';
-    // btnShowMore.style.display = 'none';
-    // btnShowLess.style.display = 'inline';
-  }
-
-  public viewLess(): void {
-    // const ellipsis = document.getElementById('ellipsis') as HTMLElement;
-    // const viewmore = document.getElementById('see-more') as HTMLElement;
-    // const btnShowMore = document.getElementById('btn-show-more') as HTMLElement;
-    // const btnShowLess = document.getElementById('btn-show-less') as HTMLElement;
-
-    // ellipsis.style.display = 'inline';
-    // viewmore.style.display = 'none';
-    // btnShowMore.style.display = 'inline';
-    // btnShowLess.style.display = 'none';
   }
 }
